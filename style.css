@@ -266,8 +266,17 @@ justify-content: center;
         height: 400px;
     }
     .btn0{
+        padding: 0px 95px;
+        margin: 10px -60px;
         align-items: center;
     }
+    .btn{
+        margin: 10px 31px;
+    }
+    .btn-dark{
+        margin: 2px 12px;
+    }
+
     .section{
         flex-direction: column-reverse;
     }
