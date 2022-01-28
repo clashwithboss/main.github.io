@@ -108,9 +108,9 @@ justify-content: center;
 }
 
 .btn{
-    padding: 5px 60px;
+    padding: 0px 43px;
     /* align-items: center; */
-    margin: 10px 314px;
+    margin: 10px 237px;
     border: 3px solid white;
     border-radius: 15px;
     font-size: 20px;
@@ -135,6 +135,16 @@ justify-content: center;
 .btn-dark{
     color: black;
     border: 2px solid black;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1px 44px;
+    /* align-items: center; */
+    margin: 5px 128px;
+    border: 3px solid seagreen;
+    border-radius: 15px;
+    font-size: 20px;
+    /* color: beige; */
+    cursor: pointer;
+    background: none;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -172,7 +182,7 @@ justify-content: center;
 
 .contact{
     background: silver;
-    height: 70vh;
+    height: 100vh;
 }
 
 .text-center{
@@ -188,15 +198,16 @@ justify-content: center;
 }
 
 .form-input{
-    margin: 11px 0;
-    padding: 5px 3px;
-    width: 100%;
-    /*padding: 7px; */
+    margin: 9px -166px;
+    padding: 4px 38px;
+    width: 183%;
+    /* padding: 7px; */
     font-size: 19px;
     border: 2px solid seagreen;
     border-radius: 6px;
     font-family: 'Ubuntu', sans-serif;
 }
+
 
 .fbackground{
     background-color: seagreen;
@@ -217,10 +228,10 @@ justify-content: center;
 }
 
 .ta{
-    margin: 11px 0;
-    /*padding: 5px 3px;*/
-    width: 100%;
-    /*padding: 7px; */
+    margin: 26px -256px;
+    /* padding: 5px 3px; */
+    width: 252%;
+    /* padding: 7px; */
     font-size: 19px;
     border: 2px solid seagreen;
     border-radius: 6px;
@@ -256,7 +267,7 @@ justify-content: center;
     color: rgb(99, 89, 0);
 }
 
-@media only screen and (max-width: 1270px){
+@media only screen and (max-width: 720px){
     .nav-list{
         flex-direction: column;
     }
@@ -266,13 +277,14 @@ justify-content: center;
         height: 400px;
     }
     .btn0{
-        padding: 0px 95px;
+        padding: 0 95px;
         margin: 10px -60px;
         align-items: center;
     }
     .btn{
         margin: 12px 50px;
     }
+
     .btn-dark{
         margin: -14px -31px
     }
@@ -305,8 +317,29 @@ justify-content: center;
     .text-big{
         text-align: center;
     }
-
     .paras{
         padding: 0px 45px;
     }
+    .ta{
+        margin: 26px -87px;
+        /* padding: 5px 3px; */
+        width: 252%;
+        /* padding: 7px; */
+        font-size: 19px;
+        border: 2px solid seagreen;
+        border-radius: 6px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .form-input{
+    margin: 13px -108px;
+    padding: 4px 59px;
+    width: 183%;
+    /* padding: 7px; */
+    font-size: 19px;
+    border: 2px solid seagreen;
+    border-radius: 6px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
 }
