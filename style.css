@@ -11,7 +11,7 @@
 
 .logo img{
     border: 3px solid springgreen;
-    border-radius: 50px;
+    border-radius: 12px ;
 }
 .navbar{
     display: flex;
@@ -121,8 +121,8 @@ justify-content: center;
 }
 
 .btn0{
-    padding: 1px 100px;
-    margin: 10px 10px;
+    padding: -3px 93px;
+    margin: -21px 38px;
     border: 3px solid white;
     border-radius: 15px;
     font-size: 20px;
@@ -266,6 +266,7 @@ justify-content: center;
 .tg4{
     color: rgb(99, 89, 0);
 }
+
 
 @media only screen and (max-width: 720px){
     .nav-list{
