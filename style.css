@@ -180,10 +180,10 @@ justify-content: center;
     margin-top: 19px;
 }
 
-.contact{
+/*.contact{
     background: silver;
     height: 100vh;
-}
+}*/
 
 .text-center{
     text-align: center;
@@ -266,7 +266,19 @@ justify-content: center;
 .tg4{
     color: rgb(99, 89, 0);
 }
-
+.contact[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+.kl{
+    text-align: center;
+    padding: 0px;
+}
 
 @media only screen and (max-width: 720px){
     .nav-list{

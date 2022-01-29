@@ -104,18 +104,76 @@
 </section>
 <hr>
 <section class="contact" id="contact">
-    <h2 class="text-center">CONTACT US</h2>
-    <div class="form" >
-        <form action="mail.php" method="post">
-        <input class="form-input" type="text" name="name" id="name" placeholder="ENTER YOUR NAME">
-        <input class="form-input" type="text" name="name" id="name" placeholder="ENTER YOUR IN _GAME NAME">
-        <input class="form-input" type="text" name="name" id="name" placeholder="ENTER YOUR PLAYER TAG">
-        <input class="form-input" type="phone" name="phone" id="name" placeholder="ENTER YOUR PHONE">
-        <input class="form-input" type="email" name="email" id="name" placeholder="ENTER YOUR EMAIL-ID">
-        <textarea class="ta" name="text" id="text" cols="10" rows="3" placeholder="LEAVE A MESSAGE FOR US"></textarea>.</textarea>
-        <button class="btn btn-dark">SUBMIT</button>
-    </form>
-    </div>
+    <style>
+        input[type=text], select {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 100%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        /*div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }*/
+        </style>
+
+        
+        <h1 class="kl">CONTACT US</h1>
+        
+        <div>
+          <form method="post" name="google-sheet">
+            <label for="name" class="nope">ENTER YOUR NAME</label>
+            <input type="text" id="fname" name="naam" placeholder="Your name.text">
+
+            <label for="gname" class="nope">ENTER YOUR INGAME-NAME</label>
+            <input type="text" id="lname" name="Gamename" placeholder="Your game name..">
+
+            <label for="tname" class="nope">ENTER YOUR PLAYER TAG</label>
+            <input type="text" id="lname" name="ptag" placeholder="Your tag with '#' .."><br>
+
+            <label for="email" class="nope">ENTER YOUR EMAIL ID</label>
+            <input type="text" id="lname" name="mail" placeholder="Your email.."><br>
+
+            <label for="phone" class="nope">ENTER YOUR PHONE</label>
+            <input type="text" id="lname" name="number" placeholder="Your number..">
+
+            <label for="message" class="nope">ENTER YOUR MESSAGE</label>
+            <input type="text" id="lname" name="message" placeholder="Your message for us..">
+          
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <script>
+            const scriptURL='https://script.google.com/macros/s/AKfycbw84ma-z7iEzMW7_QAck1Hgs2Aip1qcDU5jlVh8OghyCKjddg5TM22-oADq0-91o_9h/exec'
+            const form = document.forms['google-sheet']
+
+            form.addEventListener('submit',e=>{
+                e.preventDefault()
+                fetch(scriptURL,{method:'post',body:new FormData(form)})
+                .then(response=>alert("Thanks For Contacting Us...! we Will Be Right Back..."))
+                .catch(error => console.error('Error',error.message))
+            })
+        </script>
 </section>
 <hr>
 <footer class="fbackground">
